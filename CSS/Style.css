@@ -78,18 +78,23 @@ a{
     width: 220px;
     height: 40px;
 }
-.btn{
-    display: block;
+
+.btn-red a {
     color: #FFFFFF;
     background: #FF5D50;
-    width: 64px;
-    height: 24px;
     text-align: center;
+    font-size: 16px;
     border-radius: 22px;
     padding: 8px 32px;
 }
-
-
+.btn-red a:hover{
+    color: black;
+    background:#56C4C5;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 22px;
+    padding: 8px 32px;
+}
 
 
 
@@ -99,13 +104,44 @@ a{
 }
 
 .bottombanner{
-    background: url(img/home_footer.svg) no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url(https://sophieuniverse.github.io/Hexschool-Task2-20220605/img/home_footer.svg) no-repeat center/cover;
     height: 503px;
     position: relative;
-    /* background: url(img/home_footer.svg)no-repeat padding-box;;
-    max: width 1366px;;
-    height: 503px;
-    text-align: center; */
+    text-align: center;
+    align-items: center;
+}
+
+.bottombanner .ad{
+    color: black;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+.bottombanner .btn-green{
+    margin-top: 48px;
+    align-items: center;
+}
+
+.btn-green a {
+    color: #FFFFFF;
+    background: #56C4C5;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 27px;
+    padding: 12px 32px;
+}
+
+
+.btn-green a:hover{
+    color: #FF5D50;
+    background:#FFD153;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 27px;
+    padding: 12px 32px;
 }
 
 .footer{
@@ -113,4 +149,6 @@ a{
     text-align: center;
     background: #F5F5F5;
     padding: 20px 159px;
+    margin-top: 100px;
+    font-family: 'Noto Sans TC', sans-serif;
 }
