@@ -47,6 +47,8 @@ table {
 	border-spacing: 0;
 }
 
+/* =======以上為CSS Reset ======= */
+
 *,*::before,*::after{
     box-sizing: border-box;
 }
@@ -66,14 +68,43 @@ img{
 a{
     text-decoration: none;
 }
+
+.yellow-background{
+    position: absolute;
+    width: 850px;
+    height: 768px;
+    background: url(https://sophieuniverse.github.io/Hexschool-Task2-20220605/img/bg_home.svg) no-repeat;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
 .header{
     display: flex;
     height: 88px;
     justify-content: space-between;
     align-items: center;
-    background: url(img/bg_home.svg) no-repeat top right;
-    background-size:contain;
+    margin-bottom: 30px;
 }
+
+@media(max-width:767px){
+        .header{
+        border-bottom: 2px solid #FFD153; 
+        background-color: #FFFFFF;
+            }
+            .yellow-background{
+            /* background: none */
+            background: url(https://sophieuniverse.github.io/Hexschool-Task2-20220605/imgbg_home_sm.svg)
+            ;
+            width: 334px;
+            height: 244px;
+            top: 391px;
+            z-index: 5;
+            }
+            
+            
+}
+
 .logo{
     width: 220px;
     height: 40px;
@@ -96,12 +127,86 @@ a{
     padding: 8px 32px;
 }
 
-
-
-
 .topbanner{
-   
+    display: flex;
+    height: 534px;
+    margin-bottom: 100px;
+    align-items: center;
+    padding-top: 158px;
+    padding-bottom: 157px;
+    justify-content: space-between;
 }
+.banner-text .slogan{
+    font-size: 18px;
+    color: #56C4C5;
+    margin-bottom: 8px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: Noto Sans TC;
+}
+.banner-text h1{
+    font-size: 48px;
+    color: #221E1F;
+    line-height: 70px;
+    font-weight: bold;
+    font-family: Noto Sans TC;
+    margin-bottom: 16px;
+}
+
+.banner-text p{
+    font-size: 20px;
+    color: #221E1F;
+    line-height: 29px;
+    font-family: Noto Sans TC;
+}
+
+.banner-background{
+    background: url(https://sophieuniverse.github.io/Hexschool-Task2-20220605/img/home.svg) no-repeat center/cover;
+    width: 532px;
+    height: 534px;
+}
+@media(max-width:767px){
+    .topbanner {
+        flex-direction: column;
+        padding: 32px 20px;
+    }
+    .banner-text{
+        align-self: flex-start;
+    }
+    .banner-text .slogan{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .banner-text h1{
+        font-size: 32px;
+        line-height: 46px;
+    }
+    .banner-text p{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 32px;
+    }
+    .banner-background{
+        width: 304px;
+        height: 305px;
+        align-items: center;
+        padding: 32px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======以下為footer======== */
 
 .bottombanner{
     display: flex;
@@ -112,6 +217,12 @@ a{
     position: relative;
     text-align: center;
     align-items: center;
+}
+@media(max-width:767px){
+    .bottombanner{
+        height: 461px; 
+        background: url(https://sophieuniverse.github.io/Hexschool-Task2-20220605/img/footer_sm.svg) no-repeat center/cover;
+    }
 }
 
 .bottombanner .ad{
