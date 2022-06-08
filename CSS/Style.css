@@ -93,13 +93,13 @@ a{
         background-color: #FFFFFF;
             }
             .yellow-background{
-            /* background: none */
-            background: url(https://sophieuniverse.github.io/Hexschool-Task2-20220605/imgbg_home_sm.svg)
-            ;
-            width: 334px;
-            height: 244px;
-            top: 391px;
-            z-index: 5;
+            background: url(https://sophieuniverse.github.io/Hexschool-Task2-20220605/img/bg_home_sm.svg)no-repeat padding-box;
+            width: 354px;
+            top: 360px;
+            left: 20px;
+            padding-right: 20px;
+            margin-bottom: 32px;
+            background-size: 100%;
             }
             
             
@@ -164,6 +164,8 @@ a{
     background: url(https://sophieuniverse.github.io/Hexschool-Task2-20220605/img/home.svg) no-repeat center/cover;
     width: 532px;
     height: 534px;
+    position: relative;
+
 }
 @media(max-width:767px){
     .topbanner {
@@ -191,8 +193,39 @@ a{
         height: 305px;
         align-items: center;
         padding: 32px 20px;
+        background-size: 90%;       
     }
 }
+
+/* <!-- ////////第二區域///////// --> */
+
+.social{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.social h1{
+    display: block;
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: bold;
+    color: #221E1F;
+    font-family: Noto Sans TC;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.socialList{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconcard img{
+    width: 90px;
+}
+
 
 
 
