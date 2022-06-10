@@ -217,25 +217,115 @@ a{
 
 .socialList{
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+      
+}
+
+.iconcard{
+    text-align: center;
     align-items: center;
 }
 
 .iconcard img{
     width: 90px;
+    padding-bottom: 24px;
 }
 
+.iconcard h2{
+    font-size: 24px;
+    line-height: 35px;
+    color: #221E1F;
+    font-family: Noto Sans TC;
+    font-weight: bold;
+    padding-bottom: 24px;
+}
 
+.iconcard p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #747474;
+    font-family: Noto Sans TC;
+}
 
+@media(max-width:767px){
+    .social{
+        margin-top: 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social h1{
+        font-size: 28px;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
 
+    .iconcard h2{
+        font-size: 18px;
+        line-height: 26px;
+        padding-bottom: 16px;
+    }
+    .iconcard img{
+        width: 60px;
+        padding-bottom: 16px;
+    }
+    .iconcard p{
+        padding-bottom: 24px;
+    }
+    .iconcard {
+        width: 100%;
+    }
+}
 
+/* ////////第三區域///////// */
 
+.maincontent h1{
+    font-size: 32px;
+    line-height: 46px;
+    color: #221E1F;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 16px;
+    font-family: Noto Sans TC;
+}
 
+.maincontent p{
+    font-size: 20px;
+    line-height: 29px;
+    color: #221E1F;
+    text-align: center;
+    margin-bottom: 48px;
+    font-family: Noto Sans TC;
+}
+.roles{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.role-item img{
+    width: 260px;
+    border-radius: 12px 12px 0px 0px;
+    padding-bottom: 16px;
+}
 
+.role-item h2{
+    font-size: 16px;
+    line-height: 24px;
+    color: #56C4C5;
+    font-weight: bold;text-align:center;
+    font-family: Noto Sans TC;
+    padding-bottom: 16px;
+}
 
-
+.role-item p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #221E1F;
+    text-align:center;
+    font-family: Noto Sans TC;
+    padding-bottom: 24px;
+}
 
 
 
