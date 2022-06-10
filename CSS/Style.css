@@ -69,6 +69,10 @@ a{
     text-decoration: none;
 }
 
+h1 h2 p{
+    color: #221E1F;
+}
+
 .yellow-background{
     position: absolute;
     width: 850px;
@@ -146,7 +150,6 @@ a{
 }
 .banner-text h1{
     font-size: 48px;
-    color: #221E1F;
     line-height: 70px;
     font-weight: bold;
     font-family: Noto Sans TC;
@@ -155,7 +158,6 @@ a{
 
 .banner-text p{
     font-size: 20px;
-    color: #221E1F;
     line-height: 29px;
     font-family: Noto Sans TC;
 }
@@ -209,7 +211,6 @@ a{
     font-size: 32px;
     line-height: 46px;
     font-weight: bold;
-    color: #221E1F;
     font-family: Noto Sans TC;
     text-align: center;
     margin-bottom: 48px;
@@ -235,7 +236,6 @@ a{
 .iconcard h2{
     font-size: 24px;
     line-height: 35px;
-    color: #221E1F;
     font-family: Noto Sans TC;
     font-weight: bold;
     padding-bottom: 24px;
@@ -280,10 +280,13 @@ a{
 
 /* ////////第三區域///////// */
 
+.maincontent{
+    margin-bottom: 100px;
+}
+
 .maincontent h1{
     font-size: 32px;
     line-height: 46px;
-    color: #221E1F;
     text-align: center;
     font-weight: bold;
     margin-bottom: 16px;
@@ -293,7 +296,6 @@ a{
 .maincontent p{
     font-size: 20px;
     line-height: 29px;
-    color: #221E1F;
     text-align: center;
     margin-bottom: 48px;
     font-family: Noto Sans TC;
@@ -301,6 +303,16 @@ a{
 .roles{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.role-item{
+    width: 24%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    align-items: center;
 }
 
 .role-item img{
@@ -321,15 +333,221 @@ a{
 .role-item p{
     font-size: 16px;
     line-height: 24px;
-    color: #221E1F;
     text-align:center;
     font-family: Noto Sans TC;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+
+@media(max-width:767px){
+    .maincontent h1{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .maincontent p{
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 32px;
+    }
+    .roles{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .role-item{
+        width: 260px;
+        margin-bottom: 24px;
+    }
+    .role-item img{
+        width: 100%;
+    }
+    
+}
+
+/* ////////第四區域/////////  */
+
+.chat-way{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.chatList{
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    max-width: 53%;
+}
+
+.chat-item{
+    background: #FFFFFF;
+    width: 230px;
+    height: 280px;
+    box-shadow: 0px 2px 10px #00000014;
+    align-items: center;
+    padding: 32px;
+    border-radius: 12px;
+    margin-right: 42px;
+    margin-bottom: 28px;
+}
+
+.chat-item h2{
+    font-size:18px;
+    line-height: 26px;
+    font-family: Noto Sans TC;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+
+.chat-item p{
+    font-size:16px;
+    line-height: 24px;
+    font-family: Noto Sans TC;
+    margin-bottom: 48px;
+}
+
+.chatImg{
+    display: flex;
+    justify-content: center;
+    width: 86px;
+    height: 86px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px #00000014;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 90px;
+}
+
+.description h1{
+    font-size:32px;
+    line-height: 46px;
+    font-family: Noto Sans TC;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.description p{
+    font-size:18px;
+    line-height: 26px;
+    font-family: Noto Sans TC;
+    margin-bottom: 24px;
+}
+
+
+@media(max-width:767px){
+    .chat-way{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .description{
+        padding-left: 0;
+    }
+    .description h1{
+        font-size:28px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .description p{
+        font-size:16px;
+        line-height: 24px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    .description .btn-green{
+        margin-top: 16px;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+    .chatList{
+        max-width: 100%;
+    }
+    .chat-item{
+        max-width: 100%;
+        align-items: center;
+        padding: 32px;
+        border-radius: 12px;
+        margin: 0 auto;
+        margin-bottom: 28px;
+    }
+
+}
+
+/* ////////第五區域/////////  */
+
+.comment{
+    margin-bottom: 100px;
+}
+
+.comment h1{
+    font-size:32px ;
+    line-height: 46px;
+    text-align: center;
+    font-family: Noto Sans TC;
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+
+.commentList{
+    display: flex;
+    text-align: left;
+    position: relative;
+}
+
+.person{
+    width: 352px;
+    height: 248px;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    margin-right: 16px;
+    position: relative;
+    padding-top: 48px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.personImg{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    left: 32px;
+    top: -56px;
+    box-shadow: 0px 2px 10px #00000014;
 }
 
 
 
-/* =======以下為footer======== */
+.person p{
+    font-size: 16px;
+    line-height: 24px;
+    
+    font-family: Noto Sans TC;
+}
+/* .person-info{
+    display: flex;
+    justify-content: space-between;
+} */
+
+
+.person-info .star .pic {
+    width: 16px;
+    display: flex;
+}
+
+
+
+
+
+/* =======以下為footer待處理RWD======== */
 
 .bottombanner{
     display: flex;
@@ -345,6 +563,7 @@ a{
     .bottombanner{
         height: 461px; 
         background: url(https://sophieuniverse.github.io/Hexschool-Task2-20220605/img/footer_sm.svg) no-repeat center/cover;
+        margin-top: 60px;
     }
 }
 
@@ -379,7 +598,6 @@ a{
 }
 
 .footer{
-    color:#221E1F;
     text-align: center;
     background: #F5F5F5;
     padding: 20px 159px;
