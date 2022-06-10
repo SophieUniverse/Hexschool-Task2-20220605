@@ -56,11 +56,18 @@ table {
 .container {
     max-width: 1088px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 16px;
     /* padding-left: 16px;
     padding-right: 16px; */
     /* border:1px solid #221E1F; */
 }
+@media(max-width:767px){
+    .container {
+        padding: 0 20px; 
+    }
+
+}
+
 img{
     max-width: 100%;
     height: auto;
@@ -445,6 +452,7 @@ h1 h2 p{
     .chat-way{
         display: flex;
         flex-direction: column-reverse;
+        margin-bottom: 60px;
     }
     .description{
         padding-left: 0;
@@ -491,23 +499,23 @@ h1 h2 p{
     text-align: center;
     font-family: Noto Sans TC;
     font-weight: bold;
-    margin-bottom: 48px;
+    margin-bottom: 104px;
 }
 
 .commentList{
     display: flex;
     text-align: left;
     position: relative;
+    justify-content: space-between;
+    gap:16px
 }
 
-.person{
+.person {
     width: 352px;
-    height: 248px;
-    justify-content: space-between;
+    /* height: 248px; */
     background: #FFFFFF;
     box-shadow: 0px 2px 10px #00000014;
     border-radius: 12px;
-    margin-right: 16px;
     position: relative;
     padding-top: 48px;
     padding-right: 32px;
@@ -524,30 +532,81 @@ h1 h2 p{
     box-shadow: 0px 2px 10px #00000014;
 }
 
-
-
-.person p{
+.personSay{
     font-size: 16px;
     line-height: 24px;
-    
+    font-family: Noto Sans TC;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 24px;
+}
+
+.company{
+    font-size: 16px;
+    line-height: 24px ;
+    font-family: Noto Sans TC;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.position{
+    font-size: 16px;
+    line-height: 24px ;
     font-family: Noto Sans TC;
 }
-/* .person-info{
+
+.starList {
     display: flex;
     justify-content: space-between;
-} */
+    padding-bottom: 24px;
+}
 
-
-.person-info .star .pic {
-    width: 16px;
+.star{
     display: flex;
 }
 
+.next{
+    display: flex;
+    margin-top: 24px;
+    align-items: center;
+    justify-content: center;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    background: #DDDDDD;
+    border-radius: 50px;
+    margin-right: 8px;
+}
+.big-dot{
+    width: 16px;
+    height: 10px;
+    background: #FFD153;
+    border-radius: 50px;
+}
 
+@media(max-width:767px){
+    .comment h1{
+        font-size:28px ;
+        line-height: 40px;
+        margin-bottom: 88px;
+    }
+    .personSay{
+        margin-bottom: 16px;
+    }
+    .comment .RWD {
+        display: none;
+    }
+    .commentList{
+        align-items: center;
+        justify-content: center;
+    }
+    .comment{
+        margin-bottom: 60px;
+    }
+}
 
-
-
-/* =======以下為footer待處理RWD======== */
+/* =======以下為footer======== */
 
 .bottombanner{
     display: flex;
@@ -559,19 +618,13 @@ h1 h2 p{
     text-align: center;
     align-items: center;
 }
-@media(max-width:767px){
-    .bottombanner{
-        height: 461px; 
-        background: url(https://sophieuniverse.github.io/Hexschool-Task2-20220605/img/footer_sm.svg) no-repeat center/cover;
-        margin-top: 60px;
-    }
-}
 
 .bottombanner .ad{
-    color: black;
     font-size: 32px;
+    line-height: 46px;
     text-align: center;
     font-weight: bold;
+    margin-top: 260px;
 }
 .bottombanner .btn-green{
     margin-top: 48px;
@@ -587,7 +640,6 @@ h1 h2 p{
     padding: 12px 32px;
 }
 
-
 .btn-green a:hover{
     color: #FF5D50;
     background:#FFD153;
@@ -598,9 +650,52 @@ h1 h2 p{
 }
 
 .footer{
+    font-size: 16px;
+    line-height: 24px;
     text-align: center;
     background: #F5F5F5;
-    padding: 20px 159px;
     margin-top: 100px;
     font-family: 'Noto Sans TC', sans-serif;
+    padding: 16px 0;
+}
+
+@media(max-width:767px){
+    .bottombanner{
+        width: ;
+        height: 461px; 
+        background: url(https://sophieuniverse.github.io/Hexschool-Task2-20220605/img/footer_sm.svg) no-repeat;
+        background-size: 100%;
+    }
+    .bottombanner .ad{
+        font-size: 24px;
+        line-height: 35px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 293px;
+    }
+    .bottombanner .btn-green{
+        margin-top: 24px;
+    }
+    .footer{
+        margin-top: 60px;
+        width: 100%;
+        padding: 16px 44px;
+        
+
+    }
+}
+
+.topbtn a{
+    display: block;
+    position: fixed;
+    width: 71px;
+    height: 71px;
+    right: 48px;
+    bottom: 23px;
+}
+
+@media(max-width:767px){
+    .topbtn a{
+        width: 50px;
+        height: 50px;
 }
