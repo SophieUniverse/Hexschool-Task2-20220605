@@ -126,6 +126,7 @@ h1 h2 p{
     background: #FF5D50;
     text-align: center;
     font-size: 16px;
+    line-height: 24px;
     border-radius: 22px;
     padding: 8px 32px;
 }
@@ -134,6 +135,7 @@ h1 h2 p{
     background:#56C4C5;
     text-align: center;
     font-size: 16px;
+    line-height: 24px;
     border-radius: 22px;
     padding: 8px 32px;
 }
@@ -636,6 +638,7 @@ h1 h2 p{
     background: #56C4C5;
     text-align: center;
     font-size: 18px;
+    line-height: 26px;
     border-radius: 27px;
     padding: 12px 32px;
 }
@@ -645,6 +648,7 @@ h1 h2 p{
     background:#FFD153;
     text-align: center;
     font-size: 18px;
+    line-height: 26px;
     border-radius: 27px;
     padding: 12px 32px;
 }
@@ -698,4 +702,233 @@ h1 h2 p{
     .topbtn a{
         width: 50px;
         height: 50px;
+}
+}
+
+/* ===== Cost page CSS ===== */
+
+
+/* ////////Cost第一區域///////// */
+
+.topbox{
+    position: absolute;
+    background: url(https://sophieuniverse.github.io/Hexschool-Task2-20220605/img/banner.svg) no-repeat padding-box;
+    width: 885px;
+    height: 559px;
+    top: 0;
+    right: 0;
+    z-index: -2;
+    
+}
+
+.navbar{
+    display: flex;
+    height: 88px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 406px; 
+    /* (margin-bottom: px; ↑Footer有關) */
+}
+
+.cost-header{
+    position: absolute;
+    width:100% ;
+    background: #F7F9FD 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 0px 300px;
+    margin-bottom: 100px;
+    z-index: -7;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+}
+
+.cost-topbanner{
+    align-items: center;
+    padding-top: 180px;
+    padding-bottom: 220px;
+    z-index: 2;
+    
+}
+
+.cost-banner-text h1{
+    font-size: 48px;
+    line-height: 70px;
+    font-weight: bold;
+    font-family: Noto Sans TC;
+    margin-bottom: 16px;
+}
+
+.cost-banner-text p{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Noto Sans TC;
+}
+
+
+@media(max-width:767px){
+    .navbar{
+        /* border-bottom: 2px solid #FFD153;  */
+        background-color: #FFFFFF;
+        width: 100%;
+        
+    }
+
+    .cost-banner-text h1{
+        font-size: 32px;
+        line-height: 46px;
+        
+        
+    }
+    .cost-topbanner{
+        padding: 0 20px;
+        margin-top: 48px;
+        margin-bottom: 361px;
+    }
+
+    .cost-header{
+        top: 88px;
+        border-top: 2px solid #FFD153; 
+        margin-bottom: 60px;
+    }
+
+    .topbox{
+        display: block;
+        background: url(https://sophieuniverse.github.io/Hexschool-Task2-20220605/img/banner_sm.svg) no-repeat right bottom;
+        max-width: 100%;
+        left: 0;
+        background-size: cover;
+        
+    }
+ 
+}
+
+/* ////////Cost第二區域///////// */
+
+.cost-choice{
+    margin-top: 570px;
+    text-align: center;
+    align-items: center;
+}
+
+.cost-choice h2{
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: bold;
+    font-family: Noto Sans TC;
+    margin-bottom: 48px;
+}
+
+.rate{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+}
+
+.rate-item{
+    margin-right: 16px;
+}
+
+.rate-item a{
+    color:#56C4C5 ;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: Comfortaa;
+    border-radius: 27px;
+    padding: 12px 32px;
+    border: 1px solid #56C4C5;
+}
+
+.rate-item a:hover{
+    color:#FFFFFF ;
+    background-color: #56C4C5;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: Comfortaa;
+    border-radius: 27px;
+    padding: 12px 32px;
+}
+
+@media(max-width:767px){
+    .cost-choice{
+        margin-top: 627px;
+        text-align: center;
+        align-items: center;
+    }
+    .cost-choice h2{
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 24px;
+    }
+
+    .rate{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .rate-item{
+        margin-bottom: 32px;
+    }
+}
+
+
+/* ////////Cost第三區域///////// */
+
+
+.basic{
+    width: 50%;
+    background-color: #FFFFFF;
+}
+
+.basic h3{
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Noto Sans TC;
+    margin-bottom: 21px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.basic p{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    font-family: Noto Sans TC;
+    margin-bottom: 32px;
+}
+
+
+.checkList{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Noto Sans TC;
+}
+
+.checkList img{
+    margin-right: 13px;
+}
+
+.check-btn a{
+    color:#FFFFFF ;
+    background-color: #56C4C5;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: Comfortaa;
+    border-radius: 27px;
+    padding: 12px 32px;
+    border: 1px solid #56C4C5;
+}
+
+.check-btn a:hover{
+    color:black ;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: Comfortaa;
+    border-radius: 27px;
+    padding: 12px 32px;
 }
