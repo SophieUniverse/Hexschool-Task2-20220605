@@ -708,6 +708,7 @@ h1 h2 p{
 /* ===== Cost page CSS ===== */
 
 
+
 /* ////////Cost第一區域///////// */
 
 .topbox{
@@ -804,6 +805,11 @@ h1 h2 p{
 
 /* ////////Cost第二區域///////// */
 
+.Price-container{
+    max-width: 936px;
+    margin: 0 auto;   
+}
+
 .cost-choice{
     margin-top: 570px;
     text-align: center;
@@ -877,13 +883,24 @@ h1 h2 p{
 
 /* ////////Cost第三區域///////// */
 
-
-.basic{
-    width: 50%;
-    background-color: #FFFFFF;
+.cost-detais{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
 }
 
-.basic h3{
+.basic, .standard {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    margin: 0 15px;
+    align-items: center;
+}
+
+h3{
     font-size: 24px;
     line-height: 35px;
     text-align: center;
@@ -894,7 +911,59 @@ h1 h2 p{
     padding-bottom: 20px;
     border-bottom: 1px solid #DDDDDD;
 }
-.basic p{
+
+h4{
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center; 
+    font-family: Noto Sans TC; 
+    margin-bottom: 8px;
+}
+
+.cal{
+    text-align: center;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    margin-bottom: 32px;
+}
+
+.cal-item{
+    width: 169px;
+    height: 108px;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    padding-bottom: 24px;
+    padding: 24px 0;
+    
+}
+
+.cal-mark {
+    display: block;
+    font-size: 29px;
+    line-height: 42px;
+    padding: 0 19px;
+}
+
+
+.cal-number, .cal-numberMon{
+    font-size: 32px;
+    line-height: 35px;
+    text-align: center;
+    font-family: Noto Sans TC;
+}
+
+.cal-number{
+    color:#56C4C5;
+    font-family: Comfortaa,Noto Sans TC;
+}
+
+sub{
+    font-size: 12px;
+    line-height: 17px;
+}
+
+
+.cost-detais-p{
     font-size: 16px;
     line-height: 24px;
     text-align: center;
@@ -902,15 +971,30 @@ h1 h2 p{
     margin-bottom: 32px;
 }
 
+.cal{
+    display: flex;
+}
 
-.checkList{
+
+.checkList li{
     font-size: 16px;
     line-height: 24px;
     font-family: Noto Sans TC;
+    margin-bottom: 16px;
+    margin-left: 29px;
+   
 }
 
 .checkList img{
     margin-right: 13px;
+}
+
+.check-btn{
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    align-self: center;
+
 }
 
 .check-btn a{
@@ -922,6 +1006,7 @@ h1 h2 p{
     border-radius: 27px;
     padding: 12px 32px;
     border: 1px solid #56C4C5;
+   
 }
 
 .check-btn a:hover{
@@ -931,4 +1016,167 @@ h1 h2 p{
     font-family: Comfortaa;
     border-radius: 27px;
     padding: 12px 32px;
+}
+
+@media(max-width:767px){
+    .cost-detais{
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+    .basic, .standard {
+        width: 100%;
+        margin-bottom: 24px;
+        margin-top: -24px;  
+    }
+
+    h3{
+        width: 100%;
+        margin-bottom: 16px;
+        margin-top: 16px;
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    .cost-detais-p{
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .cal-number, .cal-numberMon{
+        font-size: 28px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .cal-mark {
+        font-size: 24px;
+        line-height: 35px;
+        padding: 0 6px;
+    }
+
+    .cal{
+        margin: 0 16px;
+    }
+
+    .cal-item{
+        width: 139px;
+        height: 89px;        
+        text-align: center;
+        padding: 16px 16px 24px;
+        margin-bottom: 27px; 
+    }
+
+    .checkList li{
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 19px;
+        padding-right: 20px;       
+    }
+
+    .checkList img{
+        margin-right: 16px;
+    }
+}
+
+/* ////////Cost第四區域///////// */
+
+.faq{
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+.faq h2{
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: bold;
+    font-family: Noto Sans TC;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.faq-item {
+    display: flex;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.faq-open{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding-left: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    justify-content: center;
+}
+
+.faqdetail{
+    display: flex;
+    justify-content: space-between
+}
+
+.faq-p{
+    font-size: 18px;
+    line-height: 28px;
+    font-family: Noto Sans TC;
+}
+
+.faq-open-p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #56C4C5;
+    margin-bottom: 24px;
+    font-family: Noto Sans TC;
+    font-weight: bold;
+}
+
+.faqList img{
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-right: 32px;
+}
+
+.faq-answer{
+    font-size: 16px;
+    line-height: 32px;
+    color: #747474;
+    font-family: Noto Sans TC;
+}
+
+.faq-item:hover{
+    background-color: #b8e6e7;
+}
+
+@media(max-width:767px){
+    .faq{
+        margin-bottom: 60px;
+    }
+    .faq h2{
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 32px;
+    }
+    .faq-p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .faq-open-p{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 16px;
+        justify-content: center;
+        padding-top: 16px;
+    }
+   
 }
