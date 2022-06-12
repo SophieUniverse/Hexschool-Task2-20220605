@@ -887,7 +887,7 @@ h1 h2 p{
 
 /* ////////Cost第三區域///////// */
 
-.cost-detais{
+.cost-details{
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
@@ -914,6 +914,7 @@ h3{
     padding-top: 10px;
     padding-bottom: 20px;
     border-bottom: 1px solid #DDDDDD;
+    width: 100%;
 }
 
 h4{
@@ -967,7 +968,7 @@ sub{
 }
 
 
-.cost-detais-p{
+.cost-details-p{
     font-size: 16px;
     line-height: 24px;
     text-align: center;
@@ -1023,7 +1024,7 @@ sub{
 }
 
 @media(max-width:767px){
-    .cost-detais{
+    .cost-details{
         align-items: center;
         flex-direction: column;
         margin-bottom: 60px;
@@ -1041,7 +1042,7 @@ sub{
         border-bottom: 1px solid #DDDDDD;
     }
 
-    .cost-detais-p{
+    .cost-details-p{
         text-align: center;
         margin-top: 24px;
         margin-bottom: 24px;
